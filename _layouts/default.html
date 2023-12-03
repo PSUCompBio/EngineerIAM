@@ -2,24 +2,26 @@
 <html lang="{{ site.lang | default: 'en-US' }}">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ site.title | default: site.github.repository_name }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <title>{{ page.title | default: site.title | default: "Engineering Diversity Project" }}</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>{{ site.title | default: site.github.repository_name }}</h1>
-            <p>{{ site.description | default: site.github.project_tagline }}</p>
-        </header>
-        <section>
-            {{ content }}
-        </section>
-        <footer>
-            <p>© {{ 'now' | date: '%Y' }} {{ site.github.owner_name }}</p>
-        </footer>
-    </div>
+    <header>
+        <h1>{{ site.title | default: "Engineering Diversity Project" }}</h1>
+    </header>
+    <section>
+        <h2>Engineering Diversity Interview Questions</h2>
+        <p>As part of our initiative to highlight the voices of underrepresented groups in engineering, we ask each participant the following questions:</p>
+        <ol>
+            <li>What inspired you to pursue a career in engineering, and how has your background influenced your journey?</li>
+            <li>Can you share a significant challenge you've encountered as an underrepresented individual in engineering and how you addressed it?</li>
+            <li>What types of support or resources have been most valuable to you in your engineering career, and what do you wish was more readily available?</li>
+            <li>How do you think your unique perspective as an underrepresented individual has impacted your work or the field of engineering as a whole?</li>
+            <li>What advice would you give to young people from underrepresented groups who are considering a career in engineering?</li>
+        </ol>
+    </section>
+    <footer>
+        <p>Hosted on GitHub Pages</p>
+    </footer>
 </body>
 </html>
-
